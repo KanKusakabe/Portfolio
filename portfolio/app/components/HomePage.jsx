@@ -1,7 +1,12 @@
 // app/components/HomePage.jsx
 import Link from "next/link";
 import Image from "next/image";
-export default function HomePage({ common, projects, samplePublications }) {
+export default function HomePage({
+  common,
+  projects,
+  samplePublications,
+  lang,
+}) {
   return (
     <>
       {/* About me */}
@@ -22,19 +27,19 @@ export default function HomePage({ common, projects, samplePublications }) {
               key={work.id || index}
               className="border-0 p-4 transform ease-out duration-300 hover:scale-105"
             >
-              <Link href={`/works/${work.id}`} className="flex gap-4">
+              <Link href={`${lang}works/${work.id}`} className="flex gap-4">
                 <Image
                   src={work.thumbnail}
-                  width={300}
-                  height={200}
+                  width={400}
+                  height={300}
                   alt="thumbnail"
                   className="w-full h-auto max-w-[170px] mr-4 sm:block hidden"
                 />
                 <div className="mt-4 float-left">
-                  <h3 className="text-xl font-semibold mb-2">{work.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <h3 className="text-5xl font-semibold mb-2">{work.title}</h3>
+                  {/* <p className="text-gray-600 dark:text-gray-400">
                     {work.abstract}
-                  </p>
+                  </p> */}
                 </div>
               </Link>
             </div>

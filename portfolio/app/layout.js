@@ -17,10 +17,10 @@ export default function RootLayout({ children }) {
       <body className={`antialiased`}>
         <div className="flex flex-col">
           <div className="flex flex-col lg:flex-row">
-            <aside className="lg:w-3/5 bg-white">
+            <aside className=" bg-white">
               <ConditionalHeader />
             </aside>
-            <div className="flex-row py-[0rem] py-0 sm:py-[5rem] lg:py-[0rem]">
+            <div className="flex-row py-[0rem] sm:py-[5rem] lg:py-[0rem]">
               <main className="flex-1">{children}</main>
               {/* <Footer /> */}
             </div>
