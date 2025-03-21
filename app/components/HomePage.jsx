@@ -3,6 +3,8 @@ import contact from "@/public/contact.json";
 import Link from "next/link";
 import Image from "next/image";
 import nextConfig from "@/next.config.mjs";
+import { renderAuthors } from "@/app/components/utils/common";
+
 export default function HomePage({
   common,
   projects,
@@ -23,7 +25,7 @@ export default function HomePage({
           <Link href={contact.X}>
             <Image
               src={`${BASE_PATH}/image/icon/X.svg`}
-              alt="X account"
+              alt="X"
               width={24}
               height={24}
             />
@@ -111,17 +113,19 @@ export default function HomePage({
       <section id="publications" className="common-section">
         <h2>{common.publication_title}</h2>
         <div className="space-y-2">
-          {samplePublications.map((publications, index) => (
+          {samplePublications.map((publication, index) => (
             <div
               key={index}
               className="border-gray-200 dark:border-gray-700 pb-6"
             >
-              <p>{publications.title}</p>
-              <p className="text-gray-600 dark:text-gray-400">
-                {publications.authors}
+              <p>
+                [{index + 1}] {publication.title}
               </p>
-              <p className="text-gray-500">{publications.venue}</p>
-              <p className="text-gray-500">{publications.what}</p>
+              <p className="text-gray-600 dark:text-gray-400">
+                {renderAuthors(publication.authors)}
+              </p>
+              <p className="text-gray-500">{publication.venue}</p>
+              <p className="text-gray-500">{publication.what}</p>
             </div>
           ))}
         </div>
