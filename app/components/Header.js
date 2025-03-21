@@ -84,14 +84,20 @@ export default function Header({ common }) {
         {!isMobile && (
           <div className="flex flex-row lg:flex-col items-center ml-auto lg:gap-[5rem] lg:mt-[2rem]">
             <nav className="lg:gap-[2.3rem] flex flex-row lg:flex-col">
-              <a href={`${common.path}#profile`} className="header-link-style">
+              <a
+                href={`${BASE_PATH}${common.path}#profile`}
+                className="header-link-style"
+              >
                 {common.home_title}
               </a>
-              <a href={`${common.path}#works`} className="header-link-style">
+              <a
+                href={`${BASE_PATH}${common.path}#works`}
+                className="header-link-style"
+              >
                 {common.project_title}
               </a>
               <a
-                href={`${common.path}#publications`}
+                href={`${BASE_PATH}${common.path}#publications`}
                 className="header-link-style"
               >
                 {common.publication_title}
