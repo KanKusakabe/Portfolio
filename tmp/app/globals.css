@@ -1,0 +1,49 @@
+/* app/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #0a0a0a;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-work:hover {
+  transform: scale(1.05);
+}
+
+.header-link-style {
+  margin-right: 2rem;
+  /* フォントサイズを4remに */
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.header-link-style:hover {
+  /* underline */
+  text-decoration: underline;
+}
+
+/* ページ全体の再度のパディングを設定 */
+/* max-w-6xl mx-auto px-4 py-4 */
+.all-content {
+  max-width: 1400 px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

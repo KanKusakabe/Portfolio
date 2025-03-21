@@ -1,0 +1,23 @@
+[
+  {
+    "title": "The first publication",
+    "authors": "John Doe",
+    "year": 2020,
+    "abstract": "This is the abstract of the first publication",
+    "url": "https://example.com"
+  },
+  {
+    "title": "The second publication",
+    "authors": "Jane Doe",
+    "year": 2021,
+    "abstract": "This is the abstract of the second publication",
+    "url": "https://example.com"
+  },
+  {
+    "title": "The third publication",
+    "authors": "John Doe and Jane Doe",
+    "year": 2022,
+    "abstract": "This is the abstract of the third publication",
+    "url": "https://example.com"
+  }
+]
