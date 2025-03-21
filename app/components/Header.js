@@ -106,7 +106,7 @@ export default function Header({ common }) {
 
             {/* SNS & Email Links */}
             <div className="hidden lg:flex flex-row gap-[0.5rem]">
-              <Link href={contact.X}>
+              <Link href={contact.contact.xacount}>
                 <Image
                   src={`${BASE_PATH}/image/icon/X.svg`}
                   alt="X"

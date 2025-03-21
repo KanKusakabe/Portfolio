@@ -23,7 +23,7 @@ export default function HomePage({
         <br />
         {/* SNS & Email Links */}
         <div className="flex space-x-4">
-          <Link href={contact.X}>
+          <Link href={contact.xacount}>
             <Image
               src={`${BASE_PATH}/image/icon/X.svg`}
               alt="X"
