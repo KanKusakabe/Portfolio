@@ -1,0 +1,40 @@
+[
+  {
+    "id": "project-1",
+    "slug": "project-1",
+    "title": "Project 1",
+    "authors": [
+      {
+        "name": "Kunihiro Kusakabe",
+        "isMe": true
+      },
+      {
+        "name": "John Doe",
+        "isMe": false
+      }
+    ],
+    "thumbnail": "/images/sample.jpg",
+    "venue": "Conference 2023",
+    "abstract": "This is a brief description of Project 1.",
+    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "publicationInfo": {
+      "title": "A Study on Human Interaction",
+      "doi": "10.1234/example-doi",
+      "pdfUrl": "/publications/project-1.pdf"
+    }
+  },
+  {
+    "id": "project-2",
+    "slug": "project-2",
+    "title": "Project 2",
+    "authors": [
+      {
+        "name": "Kunihiro Kusakabe",
+        "isMe": true
+      }
+    ],
+    "thumbnail": "/images/sample.jpg",
+    "venue": "Workshop 2022",
+    "abstract": "This is a brief description of Project 2."
+  }
+]
