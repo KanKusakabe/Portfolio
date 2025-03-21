@@ -1,4 +1,5 @@
 // app/components/HomePage.jsx
+import contact from "@/public/contact.json";
 import Link from "next/link";
 import Image from "next/image";
 export default function HomePage({
@@ -15,8 +16,11 @@ export default function HomePage({
         {/* <h3>{common.name}</h3> */}
         <p>{common.introduction}</p>
         <br />
+        {/* SNS & Email Links */}
+        {/* 横に並べる */}
         <div className="mb-8" />
       </section>
+
       {/* Works */}
       {/* <section id="works" className="common-section border-b "> */}
       <section id="works" className="common-section border-b">

@@ -1,5 +1,6 @@
 // app/components/ProjectPage.jsx
 import Link from "next/link";
+import { renderAuthors } from "@/app/components/utils/common";
 
 // ヘルパー関数：通常のYouTube URL を埋め込み用 URL に変換
 function getEmbedUrl(url) {
@@ -63,7 +64,8 @@ export default async function ProjectPage(props) {
               <div key={index} className="p-4 border rounded-md">
                 <h3 className="text-lg font-bold">{pub.title}</h3>
                 <p className="text-sm">
-                  {pub.authors} ({pub.year})
+                  {/* {pub.authors} ({pub.year}) */}
+                  {renderAuthors(pub.authors)} ({pub.year})
                 </p>
                 {pub.publisher && <p className="text-sm">{pub.publisher}</p>}
                 {pub.url && (

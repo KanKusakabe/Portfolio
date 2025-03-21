@@ -5,6 +5,7 @@ import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import contact from "@/public/contact.json";
 
 export default function Header({ common }) {
   const [mounted, setMounted] = useState(false);
@@ -63,7 +64,7 @@ export default function Header({ common }) {
           // PCの場合: 名前と所属を表示
           <div>
             <Image
-              src="/image/sample.png"
+              src="/image/KanKusakabe.png"
               alt="my face image"
               width={200}
               height={200}
@@ -80,16 +81,73 @@ export default function Header({ common }) {
         {!isMobile && (
           <div className="flex flex-row lg:flex-col items-center ml-auto lg:gap-[5rem] lg:mt-[2rem]">
             <nav className="lg:gap-[2.3rem] flex flex-row lg:flex-col">
-              <Link href="#profile" className="header-link-style">
+              <Link
+                href={`${common.path}#profile`}
+                className="header-link-style"
+              >
                 {common.home_title}
               </Link>
-              <Link href="#works" className="header-link-style">
+              <Link href={`${common.path}#works`} className="header-link-style">
                 {common.project_title}
               </Link>
-              <Link href="#publications" className="header-link-style">
+              <Link
+                href={`${common.path}#publications`}
+                className="header-link-style"
+              >
                 {common.publication_title}
               </Link>
             </nav>
+
+            {/* <div className="flex space-x-4 mt-4">
+              <Link href={contact.X}>
+                <Image
+                  src="/image/icon/X.svg"
+                  alt="X account"
+                  width={24}
+                  height={24}
+                />
+              </Link>
+              <Link href={contact.facebook}>
+                <Image
+                  src="/image/icon/facebook.svg"
+                  alt="Facebook"
+                  width={24}
+                  height={24}
+                />
+              </Link>
+              <Link href={contact.instagram}>
+                <Image
+                  src="/image/icon/instagram.svg"
+                  alt="instagram"
+                  width={24}
+                  height={24}
+                />
+              </Link>
+              <Link href={contact.linkedin}>
+                <Image
+                  src="/image/icon/linkedin.svg"
+                  alt="linkedin"
+                  width={24}
+                  height={24}
+                />
+              </Link>
+              <Link href={contact.github}>
+                <Image
+                  src="/image/icon/github.svg"
+                  alt="instagram"
+                  width={24}
+                  height={24}
+                />
+              </Link>
+              <Link href={contact.mail}>
+                <Image
+                  src="/image/icon/mail.svg"
+                  alt="e-mail"
+                  width={24}
+                  height={24}
+                />
+              </Link>
+            </div> */}
 
             {/* 英語/日本語切り替えをLinkコンポーネントで実装 */}
             <div className="flex gap-[0.5rem] justify-end">

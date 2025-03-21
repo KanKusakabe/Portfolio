@@ -25,19 +25,20 @@
     ]
   },
   {
-    "id": "project2",
-    "thumbnail": "/image/sample.png",
-    "title": "Project Two",
-    "abstract": "This is a brief description of Project Two.",
-    "youtube": [],
-    "publication": []
-  },
-  {
-    "id": "project3",
-    "thumbnail": "/image/sample.png",
-    "title": "Project Three",
-    "abstract": "This is a brief description of Project Three.",
-    "youtube": [],
-    "publication": []
+    "id": "handheld-styleHMD",
+    "thumbnail": "/image/handheld-teaser-EN.png",
+    "title": "Understanding Usability of VR Pointing Methods with a Handheld-style HMD for Onsite Exhibitions",
+    "abstract": "Handheld-style head-mounted displays (HMDs) are becoming increasingly popular as a convenient option for onsite exhibitions. However, they lack established practices for basic interactions, particularly pointing methods. Through our formative study involving practitioners, we discovered that controllers and hand gestures are the primary pointing methods being utilized. Building upon these findings, we conducted a usability study to explore seven different pointing methods, incorporating insights from the formative study and current virtual reality (VR) practices. The results showed that while controllers remain a viable option, hand gestures are not recommended. Notably, dwell time-based methods, which are not fast and are not commonly recognized by practitioners, demonstrate high usability and user confidence, particularly for inexperienced VR users.We recommend the use of dwell-based methods for onsite exhibition contexts. This research provides insights for the adoption of handheld-style HMDs, laying the groundwork for improving user interaction in exhibition environments, thereby potentially enhancing visitor experiences.",
+    "youtube": ["https://youtu.be/eAdcVU5cGNM"],
+    "publication": [
+      {
+        "title": "Understanding Usability of VR Pointing Methods with a Handheld-style HMD for Onsite Exhibitions",
+        "authors": "Yuki Abe*, Kan Kusakabe*, Myungguen Choi*, Daisuke Sakamoto, Tetsuo Ono",
+        "year": 2025,
+        "abstract": "Handheld-style head-mounted displays (HMDs) are becoming increasingly popular as a convenient option for onsite exhibitions. However, they lack established practices for basic interactions, particularly pointing methods. Through our formative study involving practitioners, we discovered that controllers and hand gestures are the primary pointing methods being utilized. Building upon these findings, we conducted a usability study to explore seven different pointing methods, incorporating insights from the formative study and current virtual reality (VR) practices. The results showed that while controllers remain a viable option, hand gestures are not recommended. Notably, dwell time-based methods, which are not fast and are not commonly recognized by practitioners, demonstrate high usability and user confidence, particularly for inexperienced VR users.We recommend the use of dwell-based methods for onsite exhibition contexts. This research provides insights for the adoption of handheld-style HMDs, laying the groundwork for improving user interaction in exhibition environments, thereby potentially enhancing visitor experiences.",
+        "publisher": "ACM CHI Conference on Human Factors in Computing Systems (CHI 2025), ACM, 2025",
+        "url": "https://doi.org/10.1145/3706598.3713874"
+      }
+    ]
   }
 ]
