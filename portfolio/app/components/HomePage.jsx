@@ -2,12 +2,14 @@
 import contact from "@/public/contact.json";
 import Link from "next/link";
 import Image from "next/image";
+import nextConfig from "@/next.config.mjs";
 export default function HomePage({
   common,
   projects,
   samplePublications,
   lang,
 }) {
+  const BASE_PATH = nextConfig.basePath || "";
   return (
     <>
       {/* About me */}
@@ -20,7 +22,7 @@ export default function HomePage({
         <div className="flex space-x-4 mt-4">
           <Link href={contact.X}>
             <Image
-              src="/image/icon/X.svg"
+              src={`${BASE_PATH}/image/icon/X.svg`}
               alt="X account"
               width={24}
               height={24}
@@ -28,7 +30,7 @@ export default function HomePage({
           </Link>
           <Link href={contact.facebook}>
             <Image
-              src="/image/icon/facebook.svg"
+              src={`${BASE_PATH}/image/icon/facebook.svg`}
               alt="Facebook"
               width={24}
               height={24}
@@ -36,7 +38,7 @@ export default function HomePage({
           </Link>
           <Link href={contact.instagram}>
             <Image
-              src="/image/icon/instagram.svg"
+              src={`${BASE_PATH}/image/icon/instagram.svg`}
               alt="instagram"
               width={24}
               height={24}
@@ -44,7 +46,8 @@ export default function HomePage({
           </Link>
           <Link href={contact.linkedin}>
             <Image
-              src="/image/icon/linkedin.svg"
+              // src="/image/icon/linkedin.svg"
+              src={`${BASE_PATH}/image/icon/linkedin.svg`}
               alt="linkedin"
               width={24}
               height={24}
@@ -52,7 +55,8 @@ export default function HomePage({
           </Link>
           <Link href={contact.github}>
             <Image
-              src="/image/icon/github.svg"
+              // src="/image/icon/github.svg"
+              src={`${BASE_PATH}/image/icon/github.svg`}
               alt="instagram"
               width={24}
               height={24}
@@ -60,7 +64,8 @@ export default function HomePage({
           </Link>
           <Link href={contact.mail}>
             <Image
-              src="/image/icon/mail.svg"
+              // src="/image/icon/mail.svg"
+              src={`${BASE_PATH}/image/icon/mail.svg`}
               alt="e-mail"
               width={24}
               height={24}
@@ -83,7 +88,8 @@ export default function HomePage({
             >
               <Link href={`${lang}works/${work.id}`} className="flex gap-4">
                 <Image
-                  src={work.thumbnail}
+                  // src={work.thumbnail}
+                  src={`${BASE_PATH}${work.thumbnail}`}
                   width={400}
                   height={300}
                   alt="thumbnail"
