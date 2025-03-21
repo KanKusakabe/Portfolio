@@ -13,6 +13,7 @@ export default function Home() {
       common={common}
       projects={projects}
       samplePublications={samplePublications}
+      lang="/"
     />
   );
 }

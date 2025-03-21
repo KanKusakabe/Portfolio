@@ -1,20 +1,44 @@
 [
   {
-    "id": "project1",
-    "thumbnail": "/image/sample.png",
-    "title": "Project One",
-    "abstract": "This is a brief description of Project One."
+    "id": "ringsense",
+    "thumbnail": "/image/RingSense-JP-EN.png",
+    "title": "RingSense：スマートフォン背面のジェスチャ入力を実現するスマホリング型インタフェースの設計と実装",
+    "abstract": "スマートフォンが普及して久しいが，依然として指でタッチスクリーンを操作する際に生じるファットフィンガー問題による誤操作や片手操作では画面全体に指が届かないという問題はスマートフォンの操作を困難にしている．これらの問題を扱う研究は多く，特にスマートフォン上での操作性の向上だけでなく外部デバイスを活用したインタラクション領域の拡張に取り組む研究も多い．本稿では，現在スマートフォンのアクセサリとして人気のあるスマホリングに着目し，スマートフォン背面領域のインタラクションを実現するスマホリング型ジェスチャインタフェースを提案する．我々はまず，スマホリングの利用方法を明らかにするためにクラウドソーシングで300名のスマホリング利用者からスマホリングの利用形態を調査した．続いて，ユーザ定義型ジェスチャの方法論で20名の参加者へ聞き取り調査を行いスマホリングの最適なジェスチャを設計した．最後に，圧力センサを用いたスマホリング型デバイスであるRingSenseを開発し，10名のデータを機械学習モデルのCNNを用いたジェスチャ分類器で解析したところ，92.7%の分類精度であった．",
+    "youtube": ["https://youtu.be/KSve5uYrvyc"],
+    "publication": [
+      {
+        "title": "RingSense：スマートフォン背面のジェスチャ入力を実現するスマホリング型インタフェースの設計と実装",
+        "authors": "日下部 完, 坂本 大介, 小野 哲雄",
+        "year": 2025,
+        "abstract": "スマートフォンが普及して久しいが，依然として指でタッチスクリーンを操作する際に生じるファットフィンガー問題による誤操作や片手操作では画面全体に指が届かないという問題はスマートフォンの操作を困難にしている．これらの問題を扱う研究は多く，特にスマートフォン上での操作性の向上だけでなく外部デバイスを活用したインタラクション領域の拡張に取り組む研究も多い．本稿では，現在スマートフォンのアクセサリとして人気のあるスマホリングに着目し，スマートフォン背面領域のインタラクションを実現するスマホリング型ジェスチャインタフェースを提案する．我々はまず，スマホリングの利用方法を明らかにするためにクラウドソーシングで300名のスマホリング利用者からスマホリングの利用形態を調査した．続いて，ユーザ定義型ジェスチャの方法論で20名の参加者へ聞き取り調査を行いスマホリングの最適なジェスチャを設計した．最後に，圧力センサを用いたスマホリング型デバイスであるRingSenseを開発し，10名のデータを機械学習モデルのCNNを用いたジェスチャ分類器で解析したところ，92.7%の分類精度であった．",
+        "publisher": "情報処理学会論文誌，情報処理学会, Vol. 66 (2)",
+        "url": "https://doi.org/10.20729/0002000028"
+      },
+      {
+        "title": "スマートフォン背面のジェスチャ入力を実現するスマホリング型デバイスの設計と実装",
+        "authors": "日下部 完, 坂本 大介, 小野 哲雄",
+        "year": 2022,
+        "publisher": "第30回インタラクティブシステムとソフトウェアに関するワークショップ（WISS 2022），日本ソフトウェア科学会, pp.8-14，2022年12月. (ロング発表, 採択率：12.5%)",
+        "abstract": "スマートフォンが普及して久しいが，依然として指でタッチスクリーンを操作する際に生じる操作上の困難であるファットフィンガー問題や片手操作が困難という問題が存在している．これらの問題を扱う研究は多く，特にスマートフォン上での操作性の向上だけでなく外部デバイスを活用したインタラクション領域の拡張に取り組む研究も多い．本稿では，現在スマートフォンのアクセサリとして人気のあるスマホリングに着目し，スマートフォンのインタラクション領域の拡張を目的としたスマートフォン背面のジェスチャ認識を実現するスマホリング型のデバイスを提案する．我々はまず，ユーザ定義型ジェスチャのアプローチで 20 人の参加者へ聞き取り調査を行いスマホリングの最適なジェスチャを設計した．その後，機械学習モデルを使用し，設計したジェスチャを分類する 2 つの分類器を実装し，参加者を集めてジェスチャデータの収集を行った．集めたデータで学習と分類試験を行ったところ，日常動作とジェスチャ入力の分類では 99.1%，ジェスチャの種類の分類では 92.7%の精度が確認された．",
+        "url": "https://www.wiss.org/WISS2022Proceedings/data/02.pdf"
+      }
+    ]
   },
   {
-    "id": "project2",
-    "thumbnail": "/image/sample.png",
-    "title": "Project Two",
-    "abstract": "This is a brief description of Project Two."
-  },
-  {
-    "id": "project3",
-    "thumbnail": "/image/sample.png",
-    "title": "Project Three",
-    "abstract": "This is a brief description of Project Three."
+    "id": "handheld-styleHMD",
+    "thumbnail": "/image/handheld-teaser-EN.png",
+    "title": "Understanding Usability of VR Pointing Methods with a Handheld-style HMD for Onsite Exhibitions",
+    "abstract": "Handheld-style head-mounted displays (HMDs) are becoming increasingly popular as a convenient option for onsite exhibitions. However, they lack established practices for basic interactions, particularly pointing methods. Through our formative study involving practitioners, we discovered that controllers and hand gestures are the primary pointing methods being utilized. Building upon these findings, we conducted a usability study to explore seven different pointing methods, incorporating insights from the formative study and current virtual reality (VR) practices. The results showed that while controllers remain a viable option, hand gestures are not recommended. Notably, dwell time-based methods, which are not fast and are not commonly recognized by practitioners, demonstrate high usability and user confidence, particularly for inexperienced VR users.We recommend the use of dwell-based methods for onsite exhibition contexts. This research provides insights for the adoption of handheld-style HMDs, laying the groundwork for improving user interaction in exhibition environments, thereby potentially enhancing visitor experiences.",
+    "youtube": ["https://youtu.be/eAdcVU5cGNM"],
+    "publication": [
+      {
+        "title": "Understanding Usability of VR Pointing Methods with a Handheld-style HMD for Onsite Exhibitions",
+        "authors": "Yuki Abe*, Kan Kusakabe*, Myungguen Choi*, Daisuke Sakamoto, Tetsuo Ono",
+        "year": 2025,
+        "abstract": "Handheld-style head-mounted displays (HMDs) are becoming increasingly popular as a convenient option for onsite exhibitions. However, they lack established practices for basic interactions, particularly pointing methods. Through our formative study involving practitioners, we discovered that controllers and hand gestures are the primary pointing methods being utilized. Building upon these findings, we conducted a usability study to explore seven different pointing methods, incorporating insights from the formative study and current virtual reality (VR) practices. The results showed that while controllers remain a viable option, hand gestures are not recommended. Notably, dwell time-based methods, which are not fast and are not commonly recognized by practitioners, demonstrate high usability and user confidence, particularly for inexperienced VR users.We recommend the use of dwell-based methods for onsite exhibition contexts. This research provides insights for the adoption of handheld-style HMDs, laying the groundwork for improving user interaction in exhibition environments, thereby potentially enhancing visitor experiences.",
+        "publisher": "ACM CHI Conference on Human Factors in Computing Systems (CHI 2025), ACM, 2025",
+        "url": "https://doi.org/10.1145/3706598.3713874"
+      }
+    ]
   }
 ]

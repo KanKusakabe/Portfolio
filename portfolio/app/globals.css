@@ -8,13 +8,6 @@
   --foreground: #0a0a0a;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ffffff;
-    --foreground: #0a0a0a;
-  }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
@@ -27,7 +20,7 @@ html {
 
 .header-link-style {
   @apply mr-8 font-bold text-lg lg:text-2xl;
-  /* font-size: 1.2rem; */
+  word-break: keep-all;
 }
 
 .header-link-style:hover {
@@ -40,8 +33,15 @@ html {
   @apply mx-auto px-[5rem] py-[2rem];
 }
 
+/* Header内のテキストに対して改行の挙動を変更 */
+header h1,
+header p {
+  word-break: keep-all;
+}
+
 .common-section {
   @apply px-[5rem] mt-[5rem];
+  /* width: 90%; */
 }
 
 @screen sm {

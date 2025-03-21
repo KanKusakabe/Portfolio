@@ -1,18 +1,10 @@
+// app/layout.js
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/globals.css";
-import Header from "@/app/components/Header";
+import ClientHeader from "@/app/components/ClientHeader";
 import Footer from "@/app/components/Footer";
 import common from "@/public/en/common.json";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import ConditionalHeader from "@/app/components/ConditionalHeader";
 
 export const metadata = {
   title: "Create Next App",
@@ -21,18 +13,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html>
       <body className={`antialiased`}>
-        <div className="flex flex-col ">
+        <div className="flex flex-col">
           <div className="flex flex-col lg:flex-row">
-            <aside className="lg:w-2/5 bg-white">
-              <Header common={common} />
+            <aside className=" bg-white">
+              <ConditionalHeader />
             </aside>
-            <div className="flex-row py-[2rem] lg:py-[0rem]">
-              <main className="flex-1 mt-[4rem]  sm:mt-[6rem] lg:mt-[4.5rem]">
-                {children}
-              </main>
-              <Footer />
+            <div className="flex-row py-[0rem] sm:py-[5rem] lg:py-[0rem]">
+              <main className="flex-1">{children}</main>
+              {/* <Footer /> */}
             </div>
           </div>
         </div>
