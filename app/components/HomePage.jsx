@@ -25,7 +25,7 @@ export default function HomePage({
         <div className="flex space-x-4">
           <Link href={contact.xacount}>
             <Image
-              src={`${BASE_PATH}/image/icon/X.svg`}
+              src={`${BASE_PATH}/image/icon/X2.svg`}
               alt="X"
               width={24}
               height={24}
