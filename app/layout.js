@@ -9,6 +9,9 @@ import Script from "next/script";
 
 // Next.js Metadata（app/layout.js または各ページに設定）
 export const metadata = {
+  verifications: {
+    google: "fMH9Paa4GuwRywOfUUakZjPnBqE4Ngh7ky2qzbCFbV4",
+  },
   title: "Kan Kusakabe | HCI Researcher - Hokkaido University",
   description:
     "Kan Kusakabe, PhD student at Hokkaido University specializing in mobile interaction, gesture recognition, 3D printing, and interactive interface design. Explore my projects and publications.",
