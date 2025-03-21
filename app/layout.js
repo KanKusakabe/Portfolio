@@ -5,6 +5,7 @@ import ClientHeader from "@/app/components/ClientHeader";
 import Footer from "@/app/components/Footer";
 import common from "@/public/en/common.json";
 import ConditionalHeader from "@/app/components/ConditionalHeader";
+import Script from "next/script";
 
 // Next.js Metadata（app/layout.js または各ページに設定）
 export const metadata = {
@@ -59,6 +60,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html>
+      {/* Google Tag Manager */}
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${gtag.GA_MEASUREMENT_ID}');
+          `}
+      </Script>
+
       <body className={`antialiased`}>
         <div className="flex flex-col">
           <div className="flex flex-col lg:flex-row">
