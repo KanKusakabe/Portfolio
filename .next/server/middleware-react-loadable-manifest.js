@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST="{\"app/components/ClientHeader.jsx -> ./Header\":{\"id\":\"app/components/ClientHeader.jsx -> ./Header\",\"files\":[\"static/chunks/_app-pages-browser_app_components_Header_js.js\"]}}"
