@@ -83,10 +83,8 @@ export default function RootLayout({ children }) {
             <aside className=" bg-white">
               <ConditionalHeader />
             </aside>
-            <div className="flex-row py-[0rem] sm:py-[5rem] lg:py-[0rem]">
-              <main className="flex-1">{children}</main>
-              {/* <Footer /> */}
-            </div>
+            <main className="flex-1">{children}</main>
+            {/* <Footer /> */}
           </div>
         </div>
       </body>

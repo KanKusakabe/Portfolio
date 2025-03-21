@@ -16,12 +16,13 @@ export default function HomePage({
     <>
       {/* About me */}
       <section id="profile" className="common-section border-b">
+        <div className="py-[2rem] sm:py-[5rem] lg:py-[1rem]" />
         <h2>{common.home_title}</h2>
         {/* <h3>{common.name}</h3> */}
         <p>{common.introduction}</p>
         <br />
         {/* SNS & Email Links */}
-        <div className="flex space-x-4 mt-4">
+        <div className="flex space-x-4">
           <Link href={contact.X}>
             <Image
               src={`${BASE_PATH}/image/icon/X.svg`}
@@ -74,13 +75,14 @@ export default function HomePage({
             />
           </Link>
         </div>
-        {/* 横に並べる */}
-        <div className="mb-8" />
+        <div className="py-[2rem] sm:py-[5rem] lg:py-[2rem]" />
       </section>
 
       {/* Works */}
       {/* <section id="works" className="common-section border-b "> */}
       <section id="works" className="common-section border-b">
+        {/* 空間を入れる */}
+        <div className="py-[2rem] sm:py-[5rem] lg:py-[0rem]" />
         <h2>{common.project_title}</h2>
         <div className="grid grid-cols-1 [&>*]:border-0">
           {projects?.map((work, index) => (
@@ -107,10 +109,11 @@ export default function HomePage({
             </div>
           ))}
         </div>
-        <div className="mb-8" />
+        <div className="py-[2rem] sm:py-[5rem] lg:py-[2rem]" />
       </section>
       {/* Publications */}
       <section id="publications" className="common-section">
+        <div className="py-[2rem] sm:py-[5rem] lg:py-[0rem]" />
         <h2>{common.publication_title}</h2>
         <div className="space-y-2">
           {samplePublications.map((publication, index) => (
@@ -130,7 +133,7 @@ export default function HomePage({
           ))}
         </div>
       </section>
-      <div className="mb-16" />
+      <div className="py-[20rem]" />
     </>
   );
 }
