@@ -84,21 +84,18 @@ export default function Header({ common }) {
         {!isMobile && (
           <div className="flex flex-row lg:flex-col items-center ml-auto lg:gap-[5rem] lg:mt-[2rem]">
             <nav className="lg:gap-[2.3rem] flex flex-row lg:flex-col">
-              <Link
-                href={`${common.path}#profile`}
-                className="header-link-style"
-              >
+              <a href={`${common.path}#profile`} className="header-link-style">
                 {common.home_title}
-              </Link>
-              <Link href={`${common.path}#works`} className="header-link-style">
+              </a>
+              <a href={`${common.path}#works`} className="header-link-style">
                 {common.project_title}
-              </Link>
-              <Link
+              </a>
+              <a
                 href={`${common.path}#publications`}
                 className="header-link-style"
               >
                 {common.publication_title}
-              </Link>
+              </a>
             </nav>
 
             {/* 英語/日本語切り替えをLinkコンポーネントで実装 */}
@@ -123,27 +120,27 @@ export default function Header({ common }) {
             </h1>
             <p className="text-sm">{common.affiliation}</p>
           </div>
-          <Link
+          <a
             href="#profile"
             className="hover:underline"
             onClick={() => setIsOpen(false)}
           >
             {common.home_title}
-          </Link>
-          <Link
+          </a>
+          <a
             href="#works"
             className="hover:underline"
             onClick={() => setIsOpen(false)}
           >
             {common.project_title}
-          </Link>
-          <Link
+          </a>
+          <a
             href="#publications"
             className="hover:underline"
             onClick={() => setIsOpen(false)}
           >
             {common.publication_title}
-          </Link>
+          </a>
         </nav>
       )}
     </header>
