@@ -17,6 +17,56 @@ export default function HomePage({
         <p>{common.introduction}</p>
         <br />
         {/* SNS & Email Links */}
+        <div className="flex space-x-4 mt-4">
+          <Link href={contact.X}>
+            <Image
+              src="/image/icon/X.svg"
+              alt="X account"
+              width={24}
+              height={24}
+            />
+          </Link>
+          <Link href={contact.facebook}>
+            <Image
+              src="/image/icon/facebook.svg"
+              alt="Facebook"
+              width={24}
+              height={24}
+            />
+          </Link>
+          <Link href={contact.instagram}>
+            <Image
+              src="/image/icon/instagram.svg"
+              alt="instagram"
+              width={24}
+              height={24}
+            />
+          </Link>
+          <Link href={contact.linkedin}>
+            <Image
+              src="/image/icon/linkedin.svg"
+              alt="linkedin"
+              width={24}
+              height={24}
+            />
+          </Link>
+          <Link href={contact.github}>
+            <Image
+              src="/image/icon/github.svg"
+              alt="instagram"
+              width={24}
+              height={24}
+            />
+          </Link>
+          <Link href={contact.mail}>
+            <Image
+              src="/image/icon/mail.svg"
+              alt="e-mail"
+              width={24}
+              height={24}
+            />
+          </Link>
+        </div>
         {/* 横に並べる */}
         <div className="mb-8" />
       </section>
