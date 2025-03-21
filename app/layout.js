@@ -67,11 +67,14 @@ export default function RootLayout({ children }) {
       />
       <Script id="gtag-init" strategy="afterInteractive">
         {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${gtag.GA_MEASUREMENT_ID}');
-          `}
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${process.env.NEXT_PUBLIC_GTM_ID}', {
+      anonymize_ip: true,
+      page_path: window.location.pathname
+    });
+  `}
       </Script>
 
       <body className={`antialiased`}>
