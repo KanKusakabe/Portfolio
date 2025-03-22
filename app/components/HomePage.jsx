@@ -124,6 +124,7 @@ export default function HomePage({
               <p>
                 [{index + 1}] {publication.title}
               </p>
+              <p>{publication.publisher}</p>
               <p className="text-gray-600 dark:text-gray-400">
                 {renderAuthors(publication.authors)}
               </p>
