@@ -26,7 +26,7 @@
   },
   {
     "id": "game-2-X",
-    "thumbnail": "/image/game-2-X-JP.png",
+    "thumbnail": "/image/Game-2-X-JP.png",
     "title": "Game-2-X: 種類が異なるゲームプレイ間を繋ぐシステムの提案 (Game-2-X: Connecting Different Gameplays)",
     "abstract": "Communication through gameplay can enhance trust between parents and children and facilitate ice-breaking among strangers. However, opportunities for such interactions may be missed when not all participants are familiar with the same game's rules. To address this issue, we propose ''Game-2-X,'' a system that dynamically adjusts the difficulty of one game based on players’ activities in a different type of game environment. By using Game-2-X, each user can continue playing a game they are adept at while still connecting to another player's distinct game—enabling cross-game communication that was previously difficult. As an initial implementation, we focused on board games, demonstrating a working prototype that connects specific board games in real-time.",
     "youtube": [],
