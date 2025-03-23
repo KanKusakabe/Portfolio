@@ -63,22 +63,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html>
-      {/* Google Tag Manager */}
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
-      />
-      <Script id="gtag-init" strategy="afterInteractive">
-        {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '${process.env.NEXT_PUBLIC_GTM_ID}', {
-      anonymize_ip: true,
-      page_path: window.location.pathname
-    });
-  `}
-      </Script>
+      <head>
+        {/* Google Search Consoleのためのタグ */}
+        <meta
+          name="google-site-verification"
+          content="fMH9Paa4GuwRywOfUUakZjPnBqE4Ngh7ky2qzbCFbV4"
+        />
+      </head>
 
       <body className={`antialiased`}>
         <div className="flex flex-col">
