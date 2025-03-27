@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import nextConfig from "@/next.config.mjs";
 import { renderAuthors } from "@/app/components/utils/common";
+import ReactMarkdown from "react-markdown";
 
 export default function HomePage({
   common,
@@ -19,7 +20,9 @@ export default function HomePage({
         <div className="py-[2rem] sm:py-[5rem] lg:py-[1rem]" />
         <h2>{common.home_title}</h2>
         {/* <h3>{common.name}</h3> */}
-        <p>{common.introduction}</p>
+        <p>
+          <ReactMarkdown>{common.introduction}</ReactMarkdown>
+        </p>
         <br />
         {/* SNS & Email Links */}
         <div className="flex space-x-4">
@@ -123,8 +126,8 @@ export default function HomePage({
             >
               <p>
                 [{index + 1}] {publication.title}
+                <ReactMarkdown>{publication.publisher}</ReactMarkdown>
               </p>
-              <p>{publication.publisher}</p>
               <p className="text-gray-600 dark:text-gray-400">
                 {renderAuthors(publication.authors)}
               </p>

@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import contact from "@/public/contact.json";
 import nextConfig from "@/next.config.mjs";
+import ReactMarkdown from "react-markdown";
 
 export default function Header({ common }) {
   const [mounted, setMounted] = useState(false);
@@ -49,7 +50,7 @@ export default function Header({ common }) {
   return (
     <header
       style={{ writingMode: "horizontal-tb" }}
-      className={`all-content w-full fixed lg:relative z-50 ${
+      className={`header w-full fixed lg:relative z-50 ${
         isOpen ? "bg-white" : "bg-transparent"
       } sm:bg-white lg:bg-blue-50 lg:h-full`}
     >
@@ -80,7 +81,9 @@ export default function Header({ common }) {
               <h1 className="text-lg lg:text-2xl font-semibold mt-[1rem]">
                 <a href={`${BASE_PATH}${common.path}`}>{common.name}</a>
               </h1>
-              <p className="text-sm lg:text-lg">{common.affiliation}</p>
+              <p className="text-sm lg:text-lg whitespace-pre-wrap">
+                <ReactMarkdown>{common.affiliation}</ReactMarkdown>
+              </p>
             </div>
 
             <nav className="lg:gap-[2.3rem] flex flex-row lg:flex-col">

@@ -613,6 +613,9 @@ video {
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
 .rounded-full {
   border-radius: 9999px;
 }
@@ -778,6 +781,15 @@ html {
   margin-right: auto;
   padding-left: 5rem;
   padding-right: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }

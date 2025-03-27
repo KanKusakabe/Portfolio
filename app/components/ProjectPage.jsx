@@ -1,6 +1,7 @@
 // app/components/ProjectPage.jsx
 import Link from "next/link";
 import { renderAuthors } from "@/app/components/utils/common";
+import ReactMarkdowm from "react-markdown";
 
 // ヘルパー関数：通常のYouTube URL を埋め込み用 URL に変換
 function getEmbedUrl(url) {
@@ -67,7 +68,11 @@ export default async function ProjectPage(props) {
                   {/* {pub.authors} ({pub.year}) */}
                   {renderAuthors(pub.authors)} ({pub.year})
                 </p>
-                {pub.publisher && <p className="text-sm">{pub.publisher}</p>}
+                {pub.publisher && (
+                  <p className="text-sm">
+                    <ReactMarkdowm>{pub.publisher}</ReactMarkdowm>
+                  </p>
+                )}
                 {pub.url && (
                   <Link href={pub.url} className="mt-2 inline-block underline">
                     {pub.url}
