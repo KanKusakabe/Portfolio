@@ -67,7 +67,7 @@ export default function Header({ common }) {
 
         {/* PCの場合: 通常のナビゲーション */}
         {!isMobile && (
-          <div className="flex flex-row lg:flex-col items-center lg:items-start gap-[2rem] lg:gap-[5rem] lg:mt-[2rem] ">
+          <div className="flex flex-row lg:flex-col items-center lg:items-start gap-[2rem] lg:mt-[2rem] ">
             <div className="relative w-[5rem] h-[5rem] lg:w-[10rem] lg:h-[10rem]">
               <Image
                 // src="/image/KanKusakabe.png"
@@ -81,12 +81,10 @@ export default function Header({ common }) {
               <h1 className="text-lg lg:text-2xl font-semibold mt-[1rem]">
                 <a href={`${BASE_PATH}${common.path}`}>{common.name}</a>
               </h1>
-              <p className="text-sm lg:text-lg whitespace-pre-wrap">
-                <ReactMarkdown>{common.affiliation}</ReactMarkdown>
-              </p>
+              <ReactMarkdown>{common.affiliation}</ReactMarkdown>
             </div>
 
-            <nav className="lg:gap-[2.3rem] flex flex-row lg:flex-col">
+            <nav className="lg:gap-[2rem] flex flex-row lg:flex-col">
               <a
                 href={`${BASE_PATH}${common.path}#profile`}
                 className="header-link-style"

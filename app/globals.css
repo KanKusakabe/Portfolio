@@ -34,7 +34,7 @@ html {
 }
 
 .header {
-  @apply mx-auto px-[2rem] py-[2rem];
+  @apply mx-auto px-[4rem] py-[2rem];
 }
 
 /* Header内のテキストに対して改行の挙動を変更 */

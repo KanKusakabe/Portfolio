@@ -788,8 +788,8 @@ html {
 .header {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -927,6 +927,9 @@ header p {
   }
   .lg\:gap-\[5rem\] {
     gap: 5rem;
+  }
+  .lg\:gap-\[3rem\] {
+    gap: 3rem;
   }
   .lg\:bg-blue-50 {
     --tw-bg-opacity: 1;

@@ -20,9 +20,7 @@ export default function HomePage({
         <div className="py-[2rem] sm:py-[5rem] lg:py-[1rem]" />
         <h2>{common.home_title}</h2>
         {/* <h3>{common.name}</h3> */}
-        <p>
-          <ReactMarkdown>{common.introduction}</ReactMarkdown>
-        </p>
+        <ReactMarkdown>{common.introduction}</ReactMarkdown>
         <br />
         {/* SNS & Email Links */}
         <div className="flex space-x-4">
@@ -77,6 +75,9 @@ export default function HomePage({
               height={24}
             />
           </Link>
+          <Link href="/CV-research.pdf" className="font-bold">
+            CV
+          </Link>
         </div>
         <div className="py-[2rem] sm:py-[5rem] lg:py-[2rem]" />
       </section>
@@ -124,10 +125,10 @@ export default function HomePage({
               key={index}
               className="border-gray-200 dark:border-gray-700 pb-6"
             >
-              <p>
+              <div>
                 [{index + 1}] {publication.title}
                 <ReactMarkdown>{publication.publisher}</ReactMarkdown>
-              </p>
+              </div>
               <p className="text-gray-600 dark:text-gray-400">
                 {renderAuthors(publication.authors)}
               </p>
