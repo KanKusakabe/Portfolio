@@ -21,7 +21,18 @@ export default function HomePage({
         <div className="py-[2rem] sm:py-[5rem] lg:py-[1rem]" />
         <h2>{common.home_title}</h2>
         {/* <h3>{common.name}</h3> */}
-        <ReactMarkdown>{common.introduction}</ReactMarkdown>
+        <ReactMarkdown
+          components={{
+            a: ({ node, ...props }) => (
+              <a
+                className="text-blue‑500 hover:text-blue‑700 underline"
+                {...props}
+              />
+            ),
+          }}
+        >
+          {common.introduction}
+        </ReactMarkdown>
         <br />
         {/* SNS & Email Links */}
         <div className="flex space-x-4">
