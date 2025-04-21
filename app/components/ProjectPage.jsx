@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { renderAuthors } from "@/app/components/utils/common";
 import ReactMarkdowm from "react-markdown";
+import { CustomMarkdown } from "@/app/components/CustomMarkdown";
 
 // ヘルパー関数：通常のYouTube URL を埋め込み用 URL に変換
 function getEmbedUrl(url) {
@@ -63,21 +64,13 @@ export default async function ProjectPage(props) {
           <div className="mt-4 space-y-4">
             {project.publication.map((pub, index) => (
               <div key={index} className="p-4 border rounded-md">
-                <h3 className="text-lg font-bold">{pub.title}</h3>
-                <p className="text-sm">
-                  {/* {pub.authors} ({pub.year}) */}
-                  {renderAuthors(pub.authors)} ({pub.year})
-                </p>
-                {pub.publisher && (
-                  <p className="text-sm">
-                    <ReactMarkdowm>{pub.publisher}</ReactMarkdowm>
-                  </p>
-                )}
-                {pub.url && (
-                  <Link href={pub.url} className="mt-2 inline-block underline">
-                    {pub.url}
-                  </Link>
-                )}
+                {/* <h3 className="text-lg font-bold">{pub.title}</h3> */}
+                <h3 className="text-md">
+                  <CustomMarkdown>{pub.authors}</CustomMarkdown>{" "}
+                  <CustomMarkdown>{pub.title}</CustomMarkdown>{" "}
+                  <CustomMarkdown>{pub.publisher}</CustomMarkdown>{" "}
+                  <CustomMarkdown>{pub.url}</CustomMarkdown>{" "}
+                </h3>
               </div>
             ))}
           </div>

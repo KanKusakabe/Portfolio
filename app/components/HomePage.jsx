@@ -5,6 +5,7 @@ import Image from "next/image";
 import nextConfig from "@/next.config.mjs";
 import { renderAuthors } from "@/app/components/utils/common";
 import ReactMarkdown from "react-markdown";
+import { CustomMarkdown } from "@/app/components/CustomMarkdown";
 
 export default function HomePage({
   common,
@@ -104,7 +105,7 @@ export default function HomePage({
                   className="w-full h-auto max-w-[170px] mr-4 sm:block hidden"
                 />
                 <div className="mt-4 float-left">
-                  <h3 className="text-5xl font-semibold mb-2">{work.title}</h3>
+                  <h2 className="text-5xl font-semibold mb-2">{work.title}</h2>
                   {/* <p className="text-gray-600 dark:text-gray-400">
                     {work.abstract}
                   </p> */}
@@ -125,15 +126,11 @@ export default function HomePage({
               key={index}
               className="border-gray-200 dark:border-gray-700 pb-6"
             >
-              <div>
-                [{index + 1}] {publication.title}
-                <ReactMarkdown>{publication.publisher}</ReactMarkdown>
-              </div>
-              <p className="text-gray-600 dark:text-gray-400">
-                {renderAuthors(publication.authors)}
-              </p>
-              <p className="text-gray-500">{publication.venue}</p>
-              <p className="text-gray-500">{publication.what}</p>
+              [{index + 1}]{" "}
+              <CustomMarkdown>{publication.authors}</CustomMarkdown>{" "}
+              <CustomMarkdown>{publication.title}</CustomMarkdown>{" "}
+              <CustomMarkdown>{publication.publisher}</CustomMarkdown>{" "}
+              <CustomMarkdown>{publication.url}</CustomMarkdown>{" "}
             </div>
           ))}
         </div>
