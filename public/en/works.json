@@ -1,5 +1,22 @@
 [
   {
+    "id": "handheld-styleHMD",
+    "thumbnail": "/image/handheld-teaser-EN.png",
+    "title": "Understanding Usability of VR Pointing Methods with a Handheld-style HMD for Onsite Exhibitions",
+    "abstract": "Handheld-style head-mounted displays (HMDs) are becoming increasingly popular as a convenient option for onsite exhibitions. However, they lack established practices for basic interactions, particularly pointing methods. Through our formative study involving practitioners, we discovered that controllers and hand gestures are the primary pointing methods being utilized. Building upon these findings, we conducted a usability study to explore seven different pointing methods, incorporating insights from the formative study and current virtual reality (VR) practices. The results showed that while controllers remain a viable option, hand gestures are not recommended. Notably, dwell time-based methods, which are not fast and are not commonly recognized by practitioners, demonstrate high usability and user confidence, particularly for inexperienced VR users.We recommend the use of dwell-based methods for onsite exhibition contexts. This research provides insights for the adoption of handheld-style HMDs, laying the groundwork for improving user interaction in exhibition environments, thereby potentially enhancing visitor experiences.",
+    "youtube": ["https://youtu.be/eAdcVU5cGNM"],
+    "publication": [
+      {
+        "title": "Understanding Usability of VR Pointing Methods with a Handheld-style HMD for Onsite Exhibitions",
+        "authors": "Yuki Abe*, ***Kan Kusakabe****, Myungguen Choi*, Daisuke Sakamoto, Tetsuo Ono. *Joint first authors.",
+        "year": 2025,
+        "abstract": "Handheld-style head-mounted displays (HMDs) are becoming increasingly popular as a convenient option for onsite exhibitions. However, they lack established practices for basic interactions, particularly pointing methods. Through our formative study involving practitioners, we discovered that controllers and hand gestures are the primary pointing methods being utilized. Building upon these findings, we conducted a usability study to explore seven different pointing methods, incorporating insights from the formative study and current virtual reality (VR) practices. The results showed that while controllers remain a viable option, hand gestures are not recommended. Notably, dwell time-based methods, which are not fast and are not commonly recognized by practitioners, demonstrate high usability and user confidence, particularly for inexperienced VR users.We recommend the use of dwell-based methods for onsite exhibition contexts. This research provides insights for the adoption of handheld-style HMDs, laying the groundwork for improving user interaction in exhibition environments, thereby potentially enhancing visitor experiences.",
+        "publisher": "ACM CHI Conference on Human Factors in Computing Systems (CHI 2025), ACM, 2025. **Hornable Mention Award (Acceptance rate 5%)**.",
+        "url": "[URL](https://doi.org/10.1145/3706598.3713874)"
+      }
+    ]
+  },
+  {
     "id": "ringsense",
     "thumbnail": "/image/RingSense-JP-EN.png",
     "title": "RingSense: Exploring User-defined Gestures for Phone Ring Holders",
@@ -25,6 +42,14 @@
     ]
   },
   {
+    "id": "BodSockets",
+    "thumbnail": "/image/BodSockets.jpg",
+    "title": "BodSockets: Enabling Back-of-Device Interaction on Smartphones with Socket-based Interface",
+    "abstract": "We present BodSockets, an interface utilizing the form factor of collapsible phone grips, which is a smartphone accessory. BodSockets enables Back-of-Device interaction on smartphones through gestural input. We clarified the usage patterns of oﬀ-the-shelf collapsible phone grips through a crowdsourced study (N=300). Based on these findings, we prototyped BodSockets with 56 gestures categorized into IMU-based, touchscreen-based, and combined gestures. Our gesture recognition system achieved an accuracy of 91.5% for IMU-based, 91.0% for touchscreen-based, and 90.1% for combined-based gestures, respectively. Through a workshop, four promising use cases of BodSockets were revealed: (1) improving one-handed interaction; (2) reducing repetitive operations; (3) enabling error-free smartphone operation by utilizing both front and back inputs; and (4) enhancing intuitiveness and physical engagement through elastic feedback. Finally, we discuss the implications of our findings for the design of BodSockets-based interfaces.",
+    "youtube": ["https://www.youtube.com/watch?v=BmsjW-C0b5k"],
+    "publication": []
+  },
+  {
     "id": "game-2-X",
     "thumbnail": "/image/Game-2-X-JP.png",
     "title": "Game-2-X: 種類が異なるゲームプレイ間を繋ぐシステムの提案 (Game-2-X: Connecting Different Gameplays)",
@@ -38,23 +63,6 @@
         "abstract": "ゲームプレイを介したコミュニケーションは，親子間の信頼関係の向上や知らない人同士のアイスブレイキングに役立つ．しかし，常に全員がルールを知っているゲームが存在するとは限らず，これはコミュニケーション機会を逃す可能性につながる．そこで本稿では，異なる種類のゲーム環境内でのプレイ内容に応じて他方のゲームの難易度を動的に変化させるシステム Game-2-X を提案する．本システムを使用することで，各ユーザは自身の得意とするゲームで遊びながら，他方のプレイヤのゲームとの接続が可能となり，これまで交えることが難しかった異種ゲームでのコミュニケーションを実現する．Game-2-X の初期段階として，本稿では特に，ボードゲームに焦点を絞った実装を行い，特定のボードゲーム間の接続を実際にデモンストレーション発表する．",
         "publisher": "第31回インタラクティブシステムとソフトウェアに関するワークショップ（WISS 2023），日本ソフトウェア科学会, デモンストレーション発表.",
         "url": "[URL](https://www.wiss.org/WISS2023Proceedings/data/1-A03.pdf)"
-      }
-    ]
-  },
-  {
-    "id": "handheld-styleHMD",
-    "thumbnail": "/image/handheld-teaser-EN.png",
-    "title": "Understanding Usability of VR Pointing Methods with a Handheld-style HMD for Onsite Exhibitions",
-    "abstract": "Handheld-style head-mounted displays (HMDs) are becoming increasingly popular as a convenient option for onsite exhibitions. However, they lack established practices for basic interactions, particularly pointing methods. Through our formative study involving practitioners, we discovered that controllers and hand gestures are the primary pointing methods being utilized. Building upon these findings, we conducted a usability study to explore seven different pointing methods, incorporating insights from the formative study and current virtual reality (VR) practices. The results showed that while controllers remain a viable option, hand gestures are not recommended. Notably, dwell time-based methods, which are not fast and are not commonly recognized by practitioners, demonstrate high usability and user confidence, particularly for inexperienced VR users.We recommend the use of dwell-based methods for onsite exhibition contexts. This research provides insights for the adoption of handheld-style HMDs, laying the groundwork for improving user interaction in exhibition environments, thereby potentially enhancing visitor experiences.",
-    "youtube": ["https://youtu.be/eAdcVU5cGNM"],
-    "publication": [
-      {
-        "title": "Understanding Usability of VR Pointing Methods with a Handheld-style HMD for Onsite Exhibitions",
-        "authors": "Yuki Abe*, ***Kan Kusakabe****, Myungguen Choi*, Daisuke Sakamoto, Tetsuo Ono. *Joint first authors.",
-        "year": 2025,
-        "abstract": "Handheld-style head-mounted displays (HMDs) are becoming increasingly popular as a convenient option for onsite exhibitions. However, they lack established practices for basic interactions, particularly pointing methods. Through our formative study involving practitioners, we discovered that controllers and hand gestures are the primary pointing methods being utilized. Building upon these findings, we conducted a usability study to explore seven different pointing methods, incorporating insights from the formative study and current virtual reality (VR) practices. The results showed that while controllers remain a viable option, hand gestures are not recommended. Notably, dwell time-based methods, which are not fast and are not commonly recognized by practitioners, demonstrate high usability and user confidence, particularly for inexperienced VR users.We recommend the use of dwell-based methods for onsite exhibition contexts. This research provides insights for the adoption of handheld-style HMDs, laying the groundwork for improving user interaction in exhibition environments, thereby potentially enhancing visitor experiences.",
-        "publisher": "ACM CHI Conference on Human Factors in Computing Systems (CHI 2025), ACM, 2025. **Hornable Mention Award (Acceptance rate 5%)**.",
-        "url": "[URL](https://doi.org/10.1145/3706598.3713874)"
       }
     ]
   }
