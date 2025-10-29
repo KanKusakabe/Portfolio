@@ -6,13 +6,18 @@ import "@/app/globals.css";
 import Footer from "@/app/components/Footer";
 import common from "@/public/ja/common.json";
 
-// Next.js Metadata（app/layout.js または各ページに設定）
+// Next.js Metadata（日本語ページ用）
 export const metadata = {
+  verifications: {
+    google: "fMH9Paa4GuwRywOfUUakZjPnBqE4Ngh7ky2qzbCFbV4",
+  },
   title: "日下部 完 | 北海道大学大学院 - HCI研究者",
   description:
     "北海道大学大学院情報科学院 博士後期課程の日下部完です。モバイルデバイスのアクセサリ型インタフェース、ジェスチャ認識、機械学習、3Dプリンティング、インタラクティブデザインの研究に取り組んでいます。プロジェクトや出版物などをご覧いただけます。",
   keywords: [
     "日下部完",
+    "日下部",
+    "完",
     "HCI",
     "ヒューマンコンピュータインタラクション",
     "モバイルインタラクション",
@@ -20,6 +25,9 @@ export const metadata = {
     "3Dプリンティング",
     "インタラクティブデザイン",
     "北海道大学",
+    "研究",
+    "研究者",
+    "北大",
   ],
   openGraph: {
     title: "日下部完 - モバイルインタラクション・ジェスチャ認識研究",

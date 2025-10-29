@@ -39,7 +39,7 @@ export const metadata = {
         alt: "Kan Kusakabe Portrait",
       },
     ],
-    locale: "ja_JP",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
