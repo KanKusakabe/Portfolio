@@ -1,10 +1,61 @@
 [
   {
+    "title": "BodSockets：スマホソケット型インタフェースを用いたスマートフォンの背面領域を活用した操作手法の提案",
+    "authors": "***日下部 完***, 池松 香, 坂本 大介, 小野 哲雄.",
+    "year": 2025,
+    "abstract": "スマートフォンの画面を直接触って操作するタッチ操作には，指で画面が遮蔽されてしまうことによる誤操作や片手把持時の画面到達性に課題がある．この課題に取り組むために本稿では，スマホソケットに着目したジェスチャインタフェースを提案する．まず，クラウドソーシングにより300名のスマホソケット利用者から通常の利用方法を調査し，その結果に基づいてインタフェースのプロトタイプと56種のジェスチャを作成した．続いて，ジェスチャ認識器開発のためのジェスチャデータ収集と主観評価の調査（N = 6）を行った．この結果，参加者内学習時のジェスチャの認識精度の平均は90.1%であり，各ジェスチャが簡潔で，社会受容性があり，疲れにくく，安定して使用できることが分かった．さらに実施した，本システムが意図どおりに動作した際の活用方法を探索するワークショップ（N = 7）では，スマホソケット型ジェスチャインタフェースが「片手操作の改善」「繰返し入力操作の削減」「タッチ操作との併用」「弾性を用いたフィードバック」の観点で有用であることが示された．最後に，これらの結果に基づき，スマホソケット型ジェスチャインタフェースの利点を活かすジェスチャについて考察する．",
+    "publisher": "情報処理学会論文誌，情報処理学会, Vol. 66 (12)",
+    "url": "[URL](coming soon)",
+    "date": "20251215"
+  },
+  {
+    "title": "KanaShark: SHARK2に基づく日本語ジェスチャ入力手法の検討",
+    "authors": "豊田 真吾, ***日下部 完***, 坂本 大介.",
+    "year": 2025,
+    "abstract": "スマートウォッチのような小さな画面での日本語入力の困難さを解決するため，単語単位のジェスチャ入力手法KanaSharkを提案する．KanaSharkは，SHARK2やSwype入力の手法を日本語入力に用いられる12キー配列に応用し，単語の子音のみを一筆書きでなぞることで入力する．経路形状から単語を確率的に推定するため，操作の曖m昧さを許容しつつ高速な入力を可能とする．本研究ではKanaSharkの有効性を検証するため，9名の参加者による10日間の評価実験で，フリック入力手法，および子音タップ入力手法と比較した．その結果，KanaSharkは学習効果が顕著であり，フリック入力手法より有意に高速かつ少ない誤入力での入力が可能であることが示された．一方で，初期学習コストの高さが課題として示された．これらの結果に基づき，本研究の最後では，スマートウォッチの日本語入力の効率性の観点からKanaSharkの将来展望を議論する．",
+    "publisher": "第33回インタラクティブシステムとソフトウェアに関するワークショップ（WISS 2025），日本ソフトウェア科学会，2025年12月. ",
+    "url": "[URL](https://www.wiss.org/WISS2025/program.html)",
+    "date": "20251203"
+  },
+  {
+    "title": "座位での物理的な制約の緩和を目指した知覚されない閾値に基づいたリダイレクション手法の提案と評価",
+    "authors": "小林 広夢, 鈴木 湧登, ***日下部 完***, 坂本 大介.",
+    "year": 2025,
+    "abstract": "VR空間内では，上半身の回旋を伴うオブジェクトの把持・移動が頻繁に行われるが，座位では背もたれなどの障害物によりこの回旋動作が困難となるなど，物理的な制約が大きい．そこで本研究では，頭部と胸部（上肢）回旋量をユーザが知覚できない範囲で同時に増幅するリダイレクション手法を提案する．本手法は，認知負荷とサイバー酔いを抑制しつつ，物理的な回旋量を削減することで，これらの物理的な制約の緩和を目指す．まず提案手法を設計するため，回旋量の増幅がユーザに知覚されない閾値を調査する実験を行い，頭部と胸部の回旋を同時に約1.43倍まで増幅しても，ユーザに知覚されないことが示唆された．この知見に基づき，提案手法を実装し，認知負荷・サイバー酔いの抑制と物理的な回旋量の削減への影響を評価した．その結果，提案手法は認知負荷・サイバー酔いを抑制しつつ，これまでは両立が困難だった「視認性向上」と「座位における物理的な制約の緩和」を両立できる可能性が示唆された．",
+    "publisher": "第33回インタラクティブシステムとソフトウェアに関するワークショップ（WISS 2025），日本ソフトウェア科学会，2025年12月. ",
+    "url": "[URL](https://www.wiss.org/WISS2025/program.html)",
+    "date": "20251203"
+  },
+  {
+    "title": "BeMyARm：カメラエイミングを補助する視覚障がい者のための物体探索システムの提案",
+    "authors": "***日下部 完***, 阿部 優樹, 坂本 大介, 小野 哲雄.",
+    "year": 2025,
+    "publisher": "第30回インタラクティブシステムとソフトウェアに関するワークショップ（WISS 2025），日本ソフトウェア科学会，2025年12月.デモポスター発表",
+    "url": "[URL](https://www.wiss.org/WISS2025/demo.html)",
+    "date": "20251203"
+  },
+  {
+    "title": "展示空間における手持ち型ヘッドマウントディスプレイのVRポインティング手法の検討",
+    "authors": "阿部 優樹*，***日下部 完****，崔 明根*，坂本 大介，小野 哲雄. *共同第一著者.",
+    "year": 2025,
+    "publisher": "第30回インタラクティブシステムとソフトウェアに関するワークショップ（WISS 2025），日本ソフトウェア科学会，2025年12月.国際学会招待発表",
+    "url": "[URL](https://www.wiss.org/WISS2025/demo.html)",
+    "date": "20251203"
+  },
+  {
+    "title": "展示空間における手で掴むヘッドセットのVRポインティング手法の検討",
+    "authors": "阿部 優樹*，***日下部 完****，崔 明根*，坂本 大介，小野 哲雄. *共同第一著者.",
+    "year": 2025,
+    "publisher": "第24回情報科学技術フォーラム（FIT2025），一般社団法人電子情報通信学会，2025年9月.トップコンファレンスセッション",
+    "url": "[URL](https://www.wiss.org/WISS2025/demo.html)",
+    "date": "20251203"
+  },
+  {
     "title": "Understanding Usability of VR Pointing Methods with a Handheld-style HMD for Onsite Exhibitions",
     "authors": "Yuki Abe*, ***Kan Kusakabe****, Myungguen Choi*, Daisuke Sakamoto, Tetsuo Ono. *Joint first authors.",
     "year": 2025,
     "abstract": "Handheld-style head-mounted displays (HMDs) are becoming increasingly popular as a convenient option for onsite exhibitions. However, they lack established practices for basic interactions, particularly pointing methods. Through our formative study involving practitioners, we discovered that controllers and hand gestures are the primary pointing methods being utilized. Building upon these findings, we conducted a usability study to explore seven different pointing methods, incorporating insights from the formative study and current virtual reality (VR) practices. The results showed that while controllers remain a viable option, hand gestures are not recommended. Notably, dwell time-based methods, which are not fast and are not commonly recognized by practitioners, demonstrate high usability and user confidence, particularly for inexperienced VR users.We recommend the use of dwell-based methods for onsite exhibition contexts. This research provides insights for the adoption of handheld-style HMDs, laying the groundwork for improving user interaction in exhibition environments, thereby potentially enhancing visitor experiences.",
-    "publisher": "ACM CHI Conference on Human Factors in Computing Systems (CHI 2025), ACM, 2025. **Hornable Mention Award (Acceptance rate 5%)**.",
+    "publisher": "ACM CHI Conference on Human Factors in Computing Systems (CHI 2025), ACM, 2025. **Hornable Mention Award (5% of accepted papers)**.",
     "url": "[URL](https://doi.org/10.1145/3706598.3713874)",
     "date": "20250428"
   },
@@ -18,15 +69,6 @@
     "date": "20250215"
   },
   {
-    "title": "スマートフォン背面のジェスチャ入力を実現するスマホリング型デバイスの設計と実装",
-    "authors": "***日下部 完***, 坂本 大介, 小野 哲雄.",
-    "year": 2022,
-    "publisher": "第30回インタラクティブシステムとソフトウェアに関するワークショップ（WISS 2022），日本ソフトウェア科学会, pp.8-14，2022年12月. (ロング発表, 採択率：12.5%)",
-    "abstract": "スマートフォンが普及して久しいが，依然として指でタッチスクリーンを操作する際に生じる操作上の困難であるファットフィンガー問題や片手操作が困難という問題が存在している．これらの問題を扱う研究は多く，特にスマートフォン上での操作性の向上だけでなく外部デバイスを活用したインタラクション領域の拡張に取り組む研究も多い．本稿では，現在スマートフォンのアクセサリとして人気のあるスマホリングに着目し，スマートフォンのインタラクション領域の拡張を目的としたスマートフォン背面のジェスチャ認識を実現するスマホリング型のデバイスを提案する．我々はまず，ユーザ定義型ジェスチャのアプローチで 20 人の参加者へ聞き取り調査を行いスマホリングの最適なジェスチャを設計した．その後，機械学習モデルを使用し，設計したジェスチャを分類する 2 つの分類器を実装し，参加者を集めてジェスチャデータの収集を行った．集めたデータで学習と分類試験を行ったところ，日常動作とジェスチャ入力の分類では 99.1%，ジェスチャの種類の分類では 92.7%の精度が確認された．",
-    "url": "[URL](https://www.wiss.org/WISS2022Proceedings/data/02.pdf)",
-    "date": "20221218"
-  },
-  {
     "title": "Game-2-X: 種類が異なるゲームプレイ間を繋ぐシステムの提案",
     "authors": "***日下部 完****, 阿部優樹*, 坂本 大介, 小野 哲雄. *共同第一著者.",
     "year": 2023,
@@ -34,6 +76,15 @@
     "abstract": "ゲームプレイを介したコミュニケーションは，親子間の信頼関係の向上や知らない人同士のアイスブレイキングに役立つ．しかし，常に全員がルールを知っているゲームが存在するとは限らず，これはコミュニケーション機会を逃す可能性につながる．そこで本稿では，異なる種類のゲーム環境内でのプレイ内容に応じて他方のゲームの難易度を動的に変化させるシステム Game-2-X を提案する．本システムを使用することで，各ユーザは自身の得意とするゲームで遊びながら，他方のプレイヤのゲームとの接続が可能となり，これまで交えることが難しかった異種ゲームでのコミュニケーションを実現する．Game-2-X の初期段階として，本稿では特に，ボードゲームに焦点を絞った実装を行い，特定のボードゲーム間の接続を実際にデモンストレーション発表する．",
     "url": "[URL](https://www.wiss.org/WISS2023Proceedings/data/1-A03.pdf)",
     "date": "20231220"
+  },
+  {
+    "title": "スマートフォン背面のジェスチャ入力を実現するスマホリング型デバイスの設計と実装",
+    "authors": "***日下部 完***, 坂本 大介, 小野 哲雄.",
+    "year": 2022,
+    "publisher": "第30回インタラクティブシステムとソフトウェアに関するワークショップ（WISS 2022），日本ソフトウェア科学会, pp.8-14，2022年12月. (ロング発表, 採択率：12.5%)",
+    "abstract": "スマートフォンが普及して久しいが，依然として指でタッチスクリーンを操作する際に生じる操作上の困難であるファットフィンガー問題や片手操作が困難という問題が存在している．これらの問題を扱う研究は多く，特にスマートフォン上での操作性の向上だけでなく外部デバイスを活用したインタラクション領域の拡張に取り組む研究も多い．本稿では，現在スマートフォンのアクセサリとして人気のあるスマホリングに着目し，スマートフォンのインタラクション領域の拡張を目的としたスマートフォン背面のジェスチャ認識を実現するスマホリング型のデバイスを提案する．我々はまず，ユーザ定義型ジェスチャのアプローチで 20 人の参加者へ聞き取り調査を行いスマホリングの最適なジェスチャを設計した．その後，機械学習モデルを使用し，設計したジェスチャを分類する 2 つの分類器を実装し，参加者を集めてジェスチャデータの収集を行った．集めたデータで学習と分類試験を行ったところ，日常動作とジェスチャ入力の分類では 99.1%，ジェスチャの種類の分類では 92.7%の精度が確認された．",
+    "url": "[URL](https://www.wiss.org/WISS2022Proceedings/data/02.pdf)",
+    "date": "20221218"
   },
   {
     "title": "無段階調整インタフェースのためのハンドジェスチャによる操作手法の探索的研究. ",

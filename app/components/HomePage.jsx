@@ -18,9 +18,17 @@ export default function HomePage({
     <>
       {/* About me */}
       <section id="profile" className="common-section border-b">
-        <div className="py-[2rem] sm:py-[5rem] lg:py-[1rem]" />
+        <div className="sm:hidden justify-center">
+          <Image
+            src={`${BASE_PATH}/image/KanKusakabe.png`}
+            width={120} // 幅を150pxに設定
+            height={120} // 高さを150pxに設定
+            alt="It's me!"
+            className="rounded-full object-cover"
+          />
+        </div>
+        <div className="py-[1rem] sm:py-[5rem] lg:py-[1rem]" />
         <h2>{common.home_title}</h2>
-        {/* <h3>{common.name}</h3> */}
         <ReactMarkdown
           components={{
             a: ({ node, ...props }) => (
@@ -34,62 +42,21 @@ export default function HomePage({
           {common.introduction}
         </ReactMarkdown>
         <br />
-        {/* SNS & Email Links */}
-        <div className="flex space-x-4">
-          <Link href={contact.xacount}>
-            <Image
-              src={`${BASE_PATH}/image/icon/X2.svg`}
-              alt="X"
-              width={24}
-              height={24}
-            />
-          </Link>
-          <Link href={contact.facebook}>
-            <Image
-              src={`${BASE_PATH}/image/icon/facebook.svg`}
-              alt="Facebook"
-              width={24}
-              height={24}
-            />
-          </Link>
-          <Link href={contact.instagram}>
-            <Image
-              src={`${BASE_PATH}/image/icon/instagram.svg`}
-              alt="instagram"
-              width={24}
-              height={24}
-            />
-          </Link>
-          <Link href={contact.linkedin}>
-            <Image
-              // src="/image/icon/linkedin.svg"
-              src={`${BASE_PATH}/image/icon/linkedin.svg`}
-              alt="linkedin"
-              width={24}
-              height={24}
-            />
-          </Link>
-          <Link href={contact.github}>
-            <Image
-              // src="/image/icon/github.svg"
-              src={`${BASE_PATH}/image/icon/github.svg`}
-              alt="instagram"
-              width={24}
-              height={24}
-            />
-          </Link>
-          <Link href={contact.mail}>
-            <Image
-              // src="/image/icon/mail.svg"
-              src={`${BASE_PATH}/image/icon/mail.svg`}
-              alt="e-mail"
-              width={24}
-              height={24}
-            />
-          </Link>
-          <Link href="/CV-research.pdf" className="font-bold">
-            CV
-          </Link>
+        {/* News */}
+        <h4 className="font-bold">{common.news_title}</h4>
+        <div className="leading-relaxed">
+          {Array.isArray(common.news) && common.news.length > 0 ? (
+            common.news.map((news_line, index) => (
+              <div
+                key={index}
+                className="border-gray-200 dark:border-gray-700 pb-"
+              >
+                - <CustomMarkdown>{news_line}</CustomMarkdown>{" "}
+              </div>
+            ))
+          ) : (
+            <p>No news available.</p>
+          )}
         </div>
         <div className="py-[2rem] sm:py-[5rem] lg:py-[2rem]" />
       </section>
@@ -113,10 +80,12 @@ export default function HomePage({
                   width={400}
                   height={300}
                   alt="thumbnail"
-                  className="w-full h-auto max-w-[170px] mr-4 sm:block hidden"
+                  className="w-full h-auto max-w-[170px] mr-4"
                 />
                 <div className="mt-4 float-left">
-                  <h2 className="text-5xl font-semibold mb-2">{work.title}</h2>
+                  <h2 className="text-5xl font-semibold mb-2  sm:block hidden">
+                    {work.title}
+                  </h2>
                   {/* <p className="text-gray-600 dark:text-gray-400">
                     {work.abstract}
                   </p> */}

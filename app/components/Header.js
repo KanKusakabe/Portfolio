@@ -70,10 +70,9 @@ export default function Header({ common }) {
           <div className="flex flex-row lg:flex-col items-center lg:items-start gap-[2rem] lg:mt-[2rem] ">
             <div className="relative w-[5rem] h-[5rem] lg:w-[10rem] lg:h-[10rem]">
               <Image
-                // src="/image/KanKusakabe.png"
                 src={`${BASE_PATH}/image/KanKusakabe.png`}
                 fill
-                alt="my face image"
+                alt="It's me!"
                 className="rounded-full object-cover"
               />
             </div>
@@ -175,13 +174,13 @@ export default function Header({ common }) {
         <nav className="flex flex-col gap-4 mt-1 p-4 border-t items-start">
           {/* 折りたたまれる名前と所属 */}
           <div className="mb-2 gap-3 flex flex-col items-start">
-            <Image
+            {/* <Image
               src={`${BASE_PATH}/image/KanKusakabe.png`}
               width={130}
               height={130}
               alt="my face image"
               className="rounded-full object-cover"
-            />
+            /> */}
             <div>
               <h1 className="text-xl font-semibold">
                 <a
@@ -224,6 +223,60 @@ export default function Header({ common }) {
           >
             {common.publication_title}
           </a>
+          {/* SNS & Email Links */}
+          <div className="flex flex-row gap-[0.5rem]">
+            <Link href={contact.xacount}>
+              <Image
+                src={`${BASE_PATH}/image/icon/X2.svg`}
+                alt="X"
+                width={24}
+                height={24}
+              />
+            </Link>
+            <Link href={contact.facebook}>
+              <Image
+                src={`${BASE_PATH}/image/icon/facebook.svg`}
+                alt="Facebook"
+                width={24}
+                height={24}
+              />
+            </Link>
+            <Link href={contact.instagram}>
+              <Image
+                src={`${BASE_PATH}/image/icon/instagram.svg`}
+                alt="instagram"
+                width={24}
+                height={24}
+              />
+            </Link>
+            <Link href={contact.linkedin}>
+              <Image
+                // src="/image/icon/linkedin.svg"
+                src={`${BASE_PATH}/image/icon/linkedin.svg`}
+                alt="linkedin"
+                width={24}
+                height={24}
+              />
+            </Link>
+            <Link href={contact.github}>
+              <Image
+                // src="/image/icon/github.svg"
+                src={`${BASE_PATH}/image/icon/github.svg`}
+                alt="instagram"
+                width={24}
+                height={24}
+              />
+            </Link>
+            <Link href={contact.mail}>
+              <Image
+                // src="/image/icon/mail.svg"
+                src={`${BASE_PATH}/image/icon/mail.svg`}
+                alt="e-mail"
+                width={24}
+                height={24}
+              />
+            </Link>
+          </div>
           <div className="flex gap-[0.5rem] justify-start">
             <a href={`${BASE_PATH}`} onClick={() => setIsOpen(false)}>
               en
