@@ -57,6 +57,27 @@ export default async function ProjectPage(props) {
         </div>
       )}
 
+      {/* PDFファイルの表示 */}
+      {project.pdf && (
+        <div className="mt-6">
+          <h2 className="text-xl font-semibold">PDF</h2>
+          <div className="mt-4">
+            {/* PDFを埋め込む。埋め込みができない場合はリンクを表示 */}
+            <iframe
+              src={project.pdf}
+              title="Project PDF"
+              width="100%"
+              height="600px"
+              className="border rounded"
+            >
+              <a href={project.pdf} target="_blank" rel="noopener noreferrer">
+                PDFを開く
+              </a>
+            </iframe>
+          </div>
+        </div>
+      )}
+
       {/* Publication情報の表示 */}
       {project.publication && project.publication.length > 0 && (
         <div className="mt-6">
