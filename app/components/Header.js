@@ -49,7 +49,6 @@ export default function Header({ common }) {
 
   return (
     <header
-      style={{ writingMode: "horizontal-tb" }}
       className={`header w-full fixed lg:relative z-50 ${
         isOpen ? "bg-white" : "bg-transparent"
       } sm:bg-white lg:bg-blue-50 lg:h-full`}
