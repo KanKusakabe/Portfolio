@@ -58,6 +58,15 @@ export default function HomePage({
             <p>No news available.</p>
           )}
         </div>
+        {/* `${BASE_PATH}/CV-en.pdf`のpdfジャンプを埋め込む */}
+        <br />
+        <Link
+          href={`${BASE_PATH}/${common.cv}`}
+          target="_blank"
+          className="text-blue-500 hover:text-blue-700 font-bold"
+        >
+          [Download CV]
+        </Link>
         <div className="py-[2rem] sm:py-[5rem] lg:py-[2rem]" />
       </section>
 
@@ -115,6 +124,7 @@ export default function HomePage({
           ))}
         </div>
       </section>
+
       <div className="py-[20rem]" />
     </>
   );
